@@ -26,6 +26,7 @@
   };
 
   var result = [];
+  var content = '';
 
   $.findOne('#generate').onclick = function () {
     var list = $.findAll('#table tr');
@@ -48,7 +49,13 @@
       result.push(element);
     }
 
-    $.findOne('#result').innerHTML = window.btoa(JSON.stringify(result));
+    $.findOne('#result').innerHTML = content = window.btoa(JSON.stringify(result));
+  };
+
+  $.findOne('#save').onclick = function () {
+    var uriContent = 'data:application/octet-stream,' + encodeURIComponent(content);
+
+    window.open(uriContent, 'neuesDokument');
   };
 
 })();
