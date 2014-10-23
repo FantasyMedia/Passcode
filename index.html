@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Passcode</title>
+    <link rel="stylesheet" href="css/pure-min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="pure-g margin-20">
+    <div class="pure-u-1-24"></div>
+    <header class="header">
+        <h1>Passcode <small>by <a href="//fantasy.codes">fantasy.code</a></small></h1>
+    </header>
+</div>
+<div class="pure-g margin-20">
+    <div class="pure-u-1-24"></div>
+    <button class="pure-button pure-button-primary" id="add">Add</button>
+    <button class="pure-button" id="generate">Generate</button>
+</div>
+<div class="pure-g">
+    <div class="pure-u-1-24"></div>
+    <main class="pure-u-22-24">
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Account</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>
+                    <td><input type="password"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>
+<div class="pure-g">
+    <div class="pure-u-1-24"></div>
+    <div class="pure-u-22-24">
+        <p>Result</p>
+        <div contenteditable="true" id="result"></div>
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
